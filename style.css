@@ -1,0 +1,9 @@
+@import url('./styles/header.css');
+@import url('./styles/variaveis.css');
+
+body {
+    font-family: var(--fonte-textos);
+    font-size: 16px;
+}
+
+

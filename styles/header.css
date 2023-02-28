@@ -1,0 +1,40 @@
+@import url('./variaveis.css');
+
+.cabecalho {
+    display: flex;
+    background-color: var(--azul-claro);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+
+.cabecalho__menu--hamburguer {
+    width: 2.5rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/menu-hamburguer.svg');
+    display: inline-block;
+}
+
+.cabecalho__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked~.cabecalho__menu {
+    display: block;
+}
+
+.menu__lista--item {
+    background-color: var(--azul-claro);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--cor-da-fonte);
+}   
