@@ -2,6 +2,8 @@
 @import url('./styles/header.css');
 @import url('./styles/banner.css');
 @import url('./styles/destaque.css');
+@import url('./styles/line-up.css');
+@import url('./styles/rodape.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;
