@@ -1,0 +1,38 @@
+.container__destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.destaque__imagem {
+    background-image: url('../assets/Homepage1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    height: 416px;
+    width: 312px;
+}
+
+.destaque__informativo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.informativo__titulo {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.informativo__texto {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+

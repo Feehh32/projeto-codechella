@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:ital,wght@0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@200;500;700;800&display=swap');
 @import url('./styles/header.css');
 @import url('./styles/banner.css');
+@import url('./styles/destaque.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;
@@ -18,6 +19,8 @@ body {
     font-family: var(--fonte-textos);
     font-size: 16px;
     color: var(--cor-da-fonte);
+    background:linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+    background-repeat: no-repeat; 
 }
 
 
