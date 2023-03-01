@@ -4,6 +4,8 @@
 body {
     font-family: var(--fonte-textos);
     font-size: 16px;
+    color: var(--cor-da-fonte);
 }
+
 
 

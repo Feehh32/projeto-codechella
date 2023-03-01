@@ -1,12 +1,21 @@
 @import url('./variaveis.css');
 
 .cabecalho {
+    background-color: var(--roxo-boreal);
     display: flex;
-    background-color: var(--azul-claro);
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
     position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.cabecalho__link {
+    width: 14.938rem;
+}
+
+.cabecalho__link--logo {
+    width: 100%;
 }
 
 .cabecalho__menu--hamburguer {
@@ -18,23 +27,41 @@
     display: inline-block;
 }
 
-.cabecalho__menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-}
-
 .container__botao {
     display: none;
 }
 
-.container__botao:checked~.cabecalho__menu {
-    display: block;
+.container__botao:checked ~ .cabecalho__menu > .menu__lista {
+    display: flex;
+} 
+
+.menu__lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1rem;
+    background-color: var(--roxo-boreal);
+    align-items: center;
 }
 
 .menu__lista--item {
-    background-color: var(--azul-claro);
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--cor-da-fonte);
-}   
+    line-height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    transform: rotate(-0.39deg) ;
+}
+
+.menu__lista--link {
+    color: var(--cor-da-fonte);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+
