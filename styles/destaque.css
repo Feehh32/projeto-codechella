@@ -1,3 +1,5 @@
+/* versão mobile */
+
 .container__destaque {
     display: flex;
     flex-direction: column;
@@ -20,12 +22,14 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .informativo__titulo {
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
+    line-height: 37.57px;
 }
 
 .informativo__texto {
@@ -34,5 +38,25 @@
     line-height: 40px;
     text-align: center;
 }
+
+/* versão tablets */
+
+@media screen and (min-width: 720px){
+
+    .container__destaque {
+        padding: 2rem 3.75rem 0 3.75rem;
+    }
+
+    .destaque__imagem {
+        width: 609px;
+        height: 381px;
+    }
+
+    .informativo__titulo {
+        padding:0 6rem;
+    }
+
+}
+
 
 

@@ -1,3 +1,4 @@
+/* versão mobile */
 
 .cabecalho {
     background-color: var(--roxo-boreal);
@@ -58,6 +59,30 @@
     color: var(--cor-da-fonte);
     text-decoration: none;
     font-weight: 700;
+}
+
+/* versão tablet */
+
+@media screen and (min-width: 720px){
+    .cabecalho{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cabecalho__menu--hamburguer{
+        display: none;
+    }
+
+    .menu__lista {
+        display: flex;
+        position: inherit;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .menu__lista--item {
+        border: none;
+    }
 }
 
 

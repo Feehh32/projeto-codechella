@@ -1,7 +1,9 @@
+/* Para mobile */
+
 .line-up {
     display: flex;
     flex-direction: column;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 0 1.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -62,4 +64,29 @@
     font-size: 2rem;
     line-height: 38px;
     opacity: 0.8;
+}
+
+/* Para tablets */
+
+@media screen and (min-width: 720px){
+
+    .line-up__bandas div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .barra__esquerda , .barra__direita{
+        height: 2px;
+        width: 83.5px;
+        background-color: var(--verde-escuro);
+    }
+
+    .bandas__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        
 }
