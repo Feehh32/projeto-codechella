@@ -79,7 +79,7 @@
 
     .barra__esquerda , .barra__direita{
         height: 2px;
-        width: 83.5px;
+        width: 5.219rem;
         background-color: var(--verde-escuro);
     }
 
@@ -88,5 +88,27 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .bandas__item:hover {
+        transform: scale(1.2);
+    }
+
+    .bandas__item:first-child {
+        display: block;
+        width: 100%;
+    }
         
 }
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px){
+    .barra__direita, .barra__esquerda{
+        width: 22.469rem;
+    }
+
+    .bandas__item:first-child {
+        display: block;
+        width: 100%;
+    }
+} 

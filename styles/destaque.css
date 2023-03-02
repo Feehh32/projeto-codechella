@@ -58,5 +58,18 @@
 
 }
 
+/* versão para desktops */
+
+@media screen and (min-width: 1440px){
+    .container__destaque {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .destaque__informativo {
+        width: 33.75rem;
+    }
+}
+
 
 

@@ -6,10 +6,15 @@
     align-items: center;
 }
 
-.rodape__img {
-    height: 60%;
+.banner-inferior__img {
     width: 100%;
+    height: 100%;
     mix-blend-mode: multiply;
+}
+
+.banner-inferior {
+    width: 100%;
+    height: 15rem;
 }
 
 .container__rodape {
@@ -35,10 +40,23 @@
     color: var(--cor-da-fonte);
 }
 
-/* Para tablets */
+/* Para desktops */
 
-@media screen and (min-width: 720px){
-    .rodape__img {
-        
+@media screen and (min-width: 1440px) {
+    .banner-inferior {
+        height: 20rem;
+    } 
+
+    .rodape {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container__rodape{
+        padding-left: 7.5rem;
+    }
+
+    .informativo {
+        padding-right: 7.5rem;
     }
 }

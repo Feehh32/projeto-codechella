@@ -83,7 +83,22 @@
     .menu__lista--item {
         border: none;
     }
+
+    .menu__lista--item:hover {
+       border-bottom: solid 2px var(--verde-claro);
+    }
 }
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px){
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
 
 
 
