@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.5rem;
-    gap: 4rem;
+    padding: 2rem 3rem;
+    gap: 8rem;
 }
 
 .experiencia__card {
@@ -63,7 +63,7 @@
     }
 
     .experiencia__card--descricao{
-        padding: 0 3.75rem;
+        width: 528px;
     }
 }
 
@@ -73,10 +73,15 @@
    
     .experiencia__card {
         flex-direction: row;
+        gap: 3rem;
     }
 
     .experiencia__card:nth-child(2){
         flex-direction: row-reverse;
+    }
+
+    .experiencia__card:nth-child(2) .card__descricao--texto {
+        text-align: end;
     }
 
     .experiencia__card--descricao {

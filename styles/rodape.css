@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--roxo-boreal);
 }
 
 .banner-inferior__img {
@@ -55,8 +56,9 @@
     .container__rodape{
         padding-left: 7.5rem;
     }
-
-    .informativo {
+    
+    .rodape__texto--div {
+        width: 326px;
         padding-right: 7.5rem;
     }
 }
