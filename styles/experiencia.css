@@ -1,0 +1,51 @@
+.principal__experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    gap: 4rem;
+}
+
+.experiencia__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experiencia__card--img {
+    display: block;
+    background-repeat: no-repeat;
+    width: 19.5rem;
+    height: 23.813rem;
+}
+
+.Acessibilidade {
+    background-image: url('../assets/acessibilidade.png');
+}
+
+.sustentabilidade {
+    background-image: url('../assets/sustentabilidade.png');
+}
+
+.atracoes {
+    background-image: url('../assets/atracoes.png');
+}
+
+.experiencia__card--descricao {
+    text-align: center;
+    
+}
+
+.card__descricao--titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+
+.card__descricao--texto {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 40px;
+}

@@ -4,6 +4,7 @@
 @import url('./styles/destaque.css');
 @import url('./styles/line-up.css');
 @import url('./styles/rodape.css');
+@import url('./styles/experiencia.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;

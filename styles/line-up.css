@@ -68,7 +68,7 @@
 
 /* Para tablets */
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
 
     .line-up__bandas div {
         display: flex;

@@ -41,7 +41,7 @@
 
 /* versão tablets */
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
 
     .container__destaque {
         padding: 2rem 3.75rem 0 3.75rem;

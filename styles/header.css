@@ -6,8 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     padding: 2rem 1.5rem;
+    position: relative;
 }
 
 .cabecalho__link {
@@ -38,6 +38,7 @@
 .menu__lista {
     display: none;
     position: absolute;
+    z-index: 1;
     top: 100%;
     right: 0;
     flex-direction: column;
@@ -63,7 +64,7 @@
 
 /* versão tablet */
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
     .cabecalho{
         justify-content: center;
         flex-direction: column;
