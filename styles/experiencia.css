@@ -1,3 +1,5 @@
+/* Para mobile */
+
 .principal__experiencia {
     display: flex;
     flex-direction: column;
@@ -15,14 +17,16 @@
 }
 
 .experiencia__card--img {
-    display: block;
     background-repeat: no-repeat;
-    width: 19.5rem;
-    height: 23.813rem;
+    width: 312px;
+    height: 381px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
 }
 
 .Acessibilidade {
-    background-image: url('../assets/acessibilidade.png');
+    background-image: url('../assets/acessibilidade.svg');
 }
 
 .sustentabilidade {
@@ -35,7 +39,7 @@
 
 .experiencia__card--descricao {
     text-align: center;
-    
+
 }
 
 .card__descricao--titulo {
@@ -48,4 +52,39 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 40px;
+}
+
+/* Para tablets */
+
+@media screen and (min-width: 768px){
+    .experiencia__card--img {
+        width: 609px;
+        height: 381px;
+    }
+
+    .experiencia__card--descricao{
+        padding: 0 3.75rem;
+    }
+}
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px){
+   
+    .experiencia__card {
+        flex-direction: row;
+    }
+
+    .experiencia__card:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    .experiencia__card--descricao {
+        width: 540px;
+    }
+
+    .card__descricao--texto {
+        text-align: start;
+    }
+
 }
