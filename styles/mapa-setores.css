@@ -1,0 +1,66 @@
+.mapa-setores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa-setores__div {
+    width: 360px;
+    height: 360px;
+}
+
+.mapa-setores__img {
+    width: 100%;
+}
+
+.mapa-setores__legenda{
+    display: flex;
+    flex-direction: column;
+    padding:0 3.563rem;
+    gap: 24px;
+}
+
+.legendas__titulo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.legendas__posicionamento {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.legendas__square {
+    width: 32px;
+    height: 32px;
+}
+
+.premium {
+    background-color: #0E7DF1;
+}
+
+.comum {
+    background-color: #FE016E;
+}
+
+.terreo {
+    background-color: #01A89E;
+}
+
+.superiores {
+    background-color: #3F51B5;
+}
+
+.rampas {
+    background-color: #0E7DF1;
+}
+
+.square__legendas {
+    font-weight: 200;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}

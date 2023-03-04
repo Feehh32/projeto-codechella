@@ -1,0 +1,36 @@
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 32px;
+}
+
+.detalhes__titulo,
+.detalhes__subtitulo  {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.detalhes__card {
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.detalhes__img--div {
+    width: 312px;
+    height: 239px;
+}
+
+.detalhes__img {
+    width: 100%;
+}
+
+.detalhes__texto {
+    font-weight: 500;
+    font-family: 1.25rem;
+    line-height: 40px;
+    text-align: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella - Home</title>
+    <link rel="shortcut icon" href="./assets/Símbolo-cinza 1.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/bfaa6669e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <a href="./index.html" class="cabecalho__link">
+            <img src="./assets/logo-codechella.svg" alt="logo do CodeChella" class="cabecalho__link--logo">
+        </a>
+
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu--hamburguer"></span>
+            </label>
+            <nav class="cabecalho__menu">
+                <ul class="menu__lista">
+                    <li class="menu__lista--item"><a href="./experiencia.html" class="menu__lista--link">A
+                            experiência</a></li>
+                    <li class="menu__lista--item"><a href="#" class="menu__lista--link">Mapa de Setores</a></li>
+                    <li class="menu__lista--item"><a href="#" class="menu__lista--link">Informações</a></li>
+                    <li class="menu__lista--item"><a href="#" class="menu__lista--link">Ingresso</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <div class="banner__div--texto">
+            <p class="banner__texto">Mapa de Setores</p>
+        </div>
+        <img src="./assets/banner-mapa-setores.png" alt="imagem de uma aurora boreal" class="banner__imagem">
+    </section>
+
+    <main>
+
+        <section class="mapa-setores">
+            <div class="mapa-setores__div">
+                <img src="./assets/mapa-setores1.png" alt="um mapa com os setores do festival"
+                    class="mapa-setores__img">
+            </div>
+
+            <div class="mapa-setores__legenda">
+                <p class="legendas__titulo">Legenda:</p>
+
+                <div class="legendas__posicionamento">
+                    <div class="legendas__square premium"></div>
+                    <p class="square__legendas">Pista Premium</p>
+                </div>
+                <div class="legendas__posicionamento">
+                    <div class="legendas__square comum"></div>
+                    <p class="square__legendas">Pista Comum</p>
+                </div>
+                <div class="legendas__posicionamento">
+                    <div class="legendas__square terreo"></div>
+                    <p class="square__legendas">Cadeiras térreo</p>
+                </div>
+                <div class="legendas__posicionamento">
+                    <div class="legendas__square superiores"></div>
+                    <p class="square__legendas">Cadeiras superiores</p>
+                </div>
+                <div class="legendas__posicionamento">
+                    <div class="legendas__square rampas"></div>
+                    <p class="square__legendas">Rampas</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="detalhes">
+            <h6 class="detalhes__titulo">Mais detalhes sobre os setores:</h6>
+
+            <div class="detalhes__card">
+                <div class="detalhes__img--div">
+                    <img src="./assets/setores-detalhes1.png" alt="imagem de garota em festival" class="detalhes__img">
+                </div>
+                <h6 class="detalhes__subtitulo">Pista</h6>
+                <p class="detalhes__texto">
+                    Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com
+                    local para sentar e descansar. Separada da pista premium por uma grade.
+                </p>
+            </div>
+
+            <div class="detalhes__card">
+                <div class="detalhes__img--div">
+                    <img src="./assets/setores-detalhes2.png" alt="imagem de garota em festival" class="detalhes__img">
+                </div>
+                <h6 class="detalhes__subtitulo">Pista Premium</h6>
+                <p class="detalhes__texto">
+                    Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as
+                    pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
+                </p>
+            </div>
+
+            <div class="detalhes__card">
+                <div class="detalhes__img--div">
+                    <img src="./assets/setores-detalhes2.png" alt="imagem de garota em festival" class="detalhes__img">
+                </div>
+                <h6 class="detalhes__subtitulo">Cadeiras</h6>
+                <p class="detalhes__texto">
+                    Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em
+                    relação às pistas.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="container__rodape">
+            <img src="../assets/logo-codechella.svg" alt="logo do CodeChella" class="rodape__logo">
+            <p class="rodape__texto">Acesse nossas redes:</p>
+            <ul class="rodape__lista">
+                <li class="rodape__lista--item"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="rodape__lista--item"><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                <li class="rodape__lista--item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="rodape__lista--item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="rodape__texto--div">
+            <p class="rodape__texto informativo">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
