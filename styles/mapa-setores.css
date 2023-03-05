@@ -80,3 +80,16 @@
         line-height: 37.7px;
     }
 }
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px) {
+    .mapa-setores {
+        flex-direction: row;
+    }
+
+    .mapa-setores__div {
+        width: 690px;
+        height: 716px;
+    }
+}

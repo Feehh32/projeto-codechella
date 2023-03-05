@@ -1,10 +1,18 @@
 /* Para mobile */
 
 .detalhes {
+    padding: 2rem 0;
+}
+
+.detalhes__posicionamento {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
     gap: 32px;
+}
+
+.detalhes__titulo {
+    padding-bottom: 2rem;
 }
 
 .detalhes__titulo,
@@ -33,7 +41,7 @@
 
 .detalhes__texto {
     font-weight: 500;
-    font-family: 1.25rem;
+    font-size: 1.25rem;
     line-height: 40px;
     text-align: center;
 }
@@ -41,6 +49,10 @@
 /* Para Tablets */
 
 @media screen and (min-width: 768px) {
+    .detalhes__posicionamento {
+        padding: 0 3.75rem;
+    } 
+
     .detalhes__titulo {
         font-size: 2.5rem;
     }
@@ -48,5 +60,27 @@
     .detalhes__img--div {
         width: 382.4px;
         height: 293px;
+    }
+}
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px) {
+    .detalhes {
+        padding: 3rem 0;
+    }
+
+    .detalhes__titulo {
+        padding-bottom: 3rem;
+    }
+
+    .detalhes__posicionamento {
+        flex-direction: row;
+        height: 631px;
+        padding: 0 7.5rem;
+    }
+
+    .detalhes__card:nth-child(2)  {
+        align-self:flex-end;
     }
 }
