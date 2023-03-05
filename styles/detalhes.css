@@ -1,3 +1,5 @@
+/* Para mobile */
+
 .detalhes {
     display: flex;
     flex-direction: column;
@@ -17,13 +19,14 @@
     display:flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
 }
 
 .detalhes__img--div {
     width: 312px;
     height: 239px;
 }
-
+ 
 .detalhes__img {
     width: 100%;
 }
@@ -33,4 +36,17 @@
     font-family: 1.25rem;
     line-height: 40px;
     text-align: center;
+}
+
+/* Para Tablets */
+
+@media screen and (min-width: 768px) {
+    .detalhes__titulo {
+        font-size: 2.5rem;
+    }
+
+    .detalhes__img--div {
+        width: 382.4px;
+        height: 293px;
+    }
 }

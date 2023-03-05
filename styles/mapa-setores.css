@@ -1,3 +1,5 @@
+/* Para mobiles */
+
 .mapa-setores {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,7 @@
 .legendas__titulo {
     font-weight: 700;
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 40px;
 }
 
 .legendas__posicionamento {
@@ -62,5 +64,19 @@
 .square__legendas {
     font-weight: 200;
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 40px;
+}
+
+/* Para tablets */
+
+@media screen and (min-width: 768px) {
+    .mapa-setores__div {
+        width: 648px;
+        height: 609px;
+    }
+
+    .legendas__titulo {
+        font-size: 2rem;
+        line-height: 37.7px;
+    }
 }
