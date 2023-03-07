@@ -8,6 +8,7 @@
 @import url('./styles/mapa-setores.css');
 @import url('./styles/detalhes.css');
 @import url('./styles/informacoes-principal.css');
+@import url('./styles/ingresso-formulario.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;

@@ -1,0 +1,81 @@
+.principal__formulario {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.formulario__titulo {
+    font-size: 2rem;
+    font-family: var(--font-titulos);
+    font-weight: 400;
+    line-height: 41.6px;
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo__etiqueta {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 37.57px;
+}
+
+.campo__escrita {
+    width: 292px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    margin-top: .5rem;
+    line-height: 40px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #444444;
+    border-radius: 16px;
+}
+
+#ingresso {
+    width: 312px;
+    height: 56px;
+}
+
+.campo__escrita:focus-within {
+    box-shadow: 2px 2px 10px var(--azul-claro);
+    border: 5px solid var(--azul-claro);
+}
+
+.formulario__botao {
+    text-align: center;
+}
+
+.botao__avancar {
+    color: var(--cor-da-fonte);
+    background-color: var(--roxo-boreal);
+    padding: .5rem 1rem;
+    border-radius: 16px;
+    border: none;
+    font-size: 1.25rem;
+    line-height: 40px;
+    font-weight: 700;
+    width: 164px;
+    cursor: pointer;
+}
+
+.botao__avancar:hover {
+    box-shadow: 3px 3px 5px #444444;
+}
+
+.fa-arrow-right {
+    margin-left: 1rem;
+}
