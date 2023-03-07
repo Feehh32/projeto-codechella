@@ -7,6 +7,7 @@
 @import url('./styles/experiencia.css');
 @import url('./styles/mapa-setores.css');
 @import url('./styles/detalhes.css');
+@import url('./styles/informacoes-principal.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;
@@ -18,6 +19,7 @@
     --verde-claro: #36C1A0;
     --purple: #B6BCFF;
     --cor-da-fonte:#FFFFFF;
+    --azul-claro: #C8DEEF;
 }
 
 body {

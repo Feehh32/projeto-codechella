@@ -46,6 +46,7 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 37.57px;
+    font-family: var(--font-titulos);
 }
 
 .card__descricao--texto {
