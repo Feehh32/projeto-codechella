@@ -109,10 +109,10 @@
 
 @media screen and (min-width: 1440px) {
     .principal__formulario {
-        padding:2.5rem 20.156rem;
+        padding: 2.5rem 20.156rem;
     }
+
     .formulario {
-        
         display: grid;
         grid-template-areas:
             "nome nome"

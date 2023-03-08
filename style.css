@@ -9,6 +9,7 @@
 @import url('./styles/detalhes.css');
 @import url('./styles/informacoes-principal.css');
 @import url('./styles/ingresso-formulario.css');
+@import url('./styles/ingresso.css');
 
 :root {
     --fonte-textos: 'Raleway', sans-serif;
@@ -27,7 +28,7 @@ body {
     font-family: var(--fonte-textos);
     font-size: 16px;
     color: var(--cor-da-fonte);
-    background:linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+    background: var(--cor-grandiente);
     background-repeat: no-repeat; 
 }
 

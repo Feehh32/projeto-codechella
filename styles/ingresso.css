@@ -1,0 +1,128 @@
+/* Para mobile */
+
+.principal__ingresso {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ingresso__titulo {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.container__ingresso {
+    background: linear-gradient(rgba(48, 73, 104, 1), rgba(54, 193, 160, 1), rgba(70, 80, 189, 1));
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ingresso__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cabecalho__logo {
+    background-image: url('../assets/logo-codechella.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32px;
+    width: 116.95px;
+}
+
+.cabecalho__icon {
+    background-image: url('../assets/favicon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+}
+
+.ingresso__qrCode{
+    width: 170px;
+}
+
+.ingresso__qrCode img {
+    width: 100%;
+}
+
+.ingresso__descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.descricao__nome {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 37.57px;
+}
+
+.descricao__informacao {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 40px;
+}
+
+/* Para tablets */
+
+@media screen and (min-width: 768px) {
+    .principal__ingresso {
+        padding: 4rem 3.75rem;
+    }
+   
+
+    .ingresso__qrCode{
+        width: 248px;
+    }
+
+    .ingresso__qrCode img {
+        width: 100%;
+    }
+}
+
+/* Para desktops */
+
+@media screen and (min-width: 1440px) {
+     .principal__ingresso {
+        padding: 4rem 7.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__ingresso {
+        column-gap: 3rem;
+        grid-template-columns: auto 1fr;
+        width: 792px;
+        display: grid;
+        grid-template-areas: 
+        "icons icons"
+        "qr-code info";
+    }
+
+    .ingresso__cabecalho{
+        grid-area: icons;
+    }
+
+    .ingresso__qrCode {
+        grid-area: qr-code;
+        width: 189px;
+        
+    }
+
+    .ingresso__descricao {
+        display: block;
+        grid-area: info;
+        text-align: start;
+    }
+    
+}
