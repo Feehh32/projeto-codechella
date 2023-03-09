@@ -2,7 +2,7 @@
 
 # CodeChella Project - A Eden for Devs
 
-![Badge Completo](https://img.shields.io/badge/status-Em_desenvolvimento-orange) ![Badge de seguidores](https://img.shields.io/github/followers/Feehh32)	![Badge de estrelas do repo](https://img.shields.io/github/stars/Feehh32/projeto-codechella) ![Badge da data do último commit](https://img.shields.io/github/last-commit/Feehh32/Projeto-7DaysOfCode)
+![Badge Completo](https://img.shields.io/badge/status-Em_desenvolvimento-orange) 
 
 A full responsive website from a ficticious festival called CodeChella. This project takes part from studies in Alura challenge!
 
