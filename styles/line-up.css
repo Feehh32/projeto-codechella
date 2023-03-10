@@ -3,7 +3,7 @@
 .line-up {
     display: flex;
     flex-direction: column;
-    padding: 3rem 1.5rem 0 1.5rem;
+    padding: 3rem 1.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -69,6 +69,9 @@
 /* Para tablets */
 
 @media screen and (min-width: 768px){
+    .line-up {
+        padding: 3rem;
+    }
 
     .line-up__bandas div {
         display: flex;
@@ -87,10 +90,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .bandas__item:hover {
-        transform: scale(1.2);
+        gap: 2rem;
     }
 
     .bandas__item:first-child {
@@ -103,6 +103,10 @@
 /* Para desktops */
 
 @media screen and (min-width: 1440px){
+    .line-up{
+        padding: 4rem 7.5rem;
+    }
+
     .barra__direita, .barra__esquerda{
         width: 22.469rem;
     }
@@ -110,5 +114,9 @@
     .bandas__item:first-child {
         display: block;
         width: 100%;
+    }
+
+    .bandas__item:hover {
+        transform: scale(1.2);
     }
 } 
