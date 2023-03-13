@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../assets/menu-hamburguer.svg');
-    display: inline-block;
+    display:block;
 }
 
 .container__botao {
@@ -46,6 +46,7 @@
     padding: 1rem;
     background-color: var(--roxo-boreal);
     align-items: center;
+   
 }
 
 .menu__lista--item {

@@ -86,7 +86,7 @@
 /* para tablets */
 
 @media screen and (min-width: 768px) {
-
+    
     .principal__formulario {
         padding: 2.5rem 3.75rem;
     }
@@ -100,8 +100,12 @@
         width: 648px;
     }
 
-    .formulario__campo:nth-child(4) {
+    .formulario__campo:nth-child(5) {
         width: 453px;
+    }
+
+    .campo__escrita {
+        font-size: 1.5rem;
     }
 }
 
@@ -117,6 +121,7 @@
         grid-template-areas:
             "nome nome"
             "email email"
+            "cpf cpf"
             "ingresso nascimento"
             "botao botao";
     }
@@ -132,11 +137,16 @@
     }
 
     .formulario__campo:nth-child(3) {
+        grid-area: cpf;
+        width: 100%;
+    }
+
+    .formulario__campo:nth-child(4) {
         grid-area: ingresso;
         width: 385px;
     }
 
-    .formulario__campo:nth-child(4) {
+    .formulario__campo:nth-child(5) {
         grid-area: nascimento;
         width: 385px;
     }

@@ -54,15 +54,22 @@
     <main class="principal__formulario">
         <h2 class="formulario__titulo">Preencha o formulário a seguir:</h2>
 
-        <form class="formulario" data-formulario">
+        <form class="formulario" data-formulario>
             <fieldset class="formulario__campo">
                 <label for="nome" class="campo__etiqueta">Nome Completo:</label>
                 <input type="text" minlength="3" required id="nome"
                     name="nome" class="campo__escrita">
             </fieldset>
 
+        <form class="formulario" data-cpf>
             <fieldset class="formulario__campo">
-                <label for="email" class="campo__etiqueta">Email:</label>
+                <label for="cpf" class="campo__etiqueta">CPF:</label>
+                <input type="text" minlength="11" maxlength="14" required id="CPF"
+                    name="cpf" class="campo__escrita" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"/>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="email" class="campo__etiqueta">E-mail:</label>
                 <input type="email" class="campo__escrita" id="email" name="email" required
                     placeholder="endereço@dominio.com" minlength="4">
             </fieldset>
@@ -107,6 +114,7 @@
             <p class="rodape__texto informativo">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
         </div>
     </footer>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
