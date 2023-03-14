@@ -1,4 +1,3 @@
-![banner](./assets/Banner-inferior-index.svg)  
 
 # CodeChella Project - A Eden for Devs
 

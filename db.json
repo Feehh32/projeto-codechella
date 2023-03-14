@@ -1,19 +1,12 @@
 {
-  "posts": [
+  "cadastros": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "Fernando Pereira ",
+      "cpf": "161.830.590-56",
+      "email": "fernando.mkv@gmail.com",
+      "ingresso": "cortesia",
+      "dataNascimento": "1990-07-16",
+      "id": 1
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

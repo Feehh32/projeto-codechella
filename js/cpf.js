@@ -1,9 +1,7 @@
-export default function (campo) {
+export default function ehUmCPF (campo) {
     const cpf = campo.value.replace(/\.|-/g, "");
     if (validaNumRepetido(cpf) || validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf)){
-        console.log('Esse cpf não é válido!');
-    }else {
-        console.log('CPF válido!');
+       campo.setCustomValidity("O CPF digitado não existe.");
     }
 
 }
@@ -56,6 +54,5 @@ function validaSegundoDigito(cpf){
     if (soma == 10 || soma == 11) {
         soma == 0;
     }
-    console.log(soma)
     return soma != cpf[10];
 }

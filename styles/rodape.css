@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+.rodape__texto i {
+    color: red;
+}
+
 .rodape__lista {
     display: flex;
     gap: 1.5rem;
