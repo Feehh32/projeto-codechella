@@ -1,13 +1,12 @@
-export default function ehMaiorDe16 (campo){
+export default function ehMaiorDe13 (campo){
     const dataNascimento = new Date(campo.value);
    if(!validaIdade(dataNascimento)){
-    campo.setCustomValidity('Você deve ter pelo menos 11 anos para participar do evento com pais ou responsáveis. Entrada aberta para todos com 16 anos ou mais.');
+    campo.setCustomValidity('Idade não é válida');
    }
 }
 
 function validaIdade(data){
     const dataAtual = new Date();
-    const dataMais16 = new Date((data.getUTCFullYear() + 16), (data.getUTCMonth() + 1), data.getUTCDate());
-    
-    return dataAtual >= dataMais16;
+    const dataMais13 = new Date ((data.getUTCFullYear() + 13), data.getUTCMonth(), (data.getUTCDate()+1));    
+    return dataAtual >= dataMais13; 
 }

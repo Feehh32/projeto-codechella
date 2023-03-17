@@ -1,6 +1,5 @@
 import ehUmCPF from "./cpf.js";
-import ehMaiorDe16 from "./idade.js";
-import capturandoCadastro from "./fetch.js";
+import ehMaiorDe13 from "./idade.js";
 
 function verificaCampo(campo) {
     let mensagem = "";
@@ -11,7 +10,7 @@ function verificaCampo(campo) {
     }
 
     if (campo.name == "aniversario" && campo.value != "") {
-        ehMaiorDe16(campo);
+        ehMaiorDe13(campo);
     }
 
     tiposDeErro.forEach(erro => {
@@ -35,6 +34,7 @@ function verificaCampo(campo) {
 
 const formCampo = document.querySelectorAll("[required]");
 const formulario = document.querySelector('[data-formulario]');
+let listaIngressos = JSON.parse(localStorage.getItem("cadastro")) || [];
 
 const tiposDeErro = [
     'valueMissing',
@@ -59,11 +59,11 @@ const mensagens = {
         valueMissing: 'O campo de CPF não pode estar vazio.',
         patternMismatch: "Por favor, preencha um CPF válido.",
         customError: "O CPF digitado não existe.",
-        tooShort: "O campo de CPF não tem caractéres suficientes."
+        tooShort: "O campo de CPF não tem caracteres suficientes."
     },
     aniversario: {
         valueMissing: 'O campo de data de nascimento não pode estar vazio.',
-        customError: 'Você deve ter pelo menos 11 anos para participar do evento com pais ou responsáveis. Entrada aberta para todos com 16 anos ou mais.'
+        customError: 'Você deve ter pelo menos 13 anos para participar do evento com pais ou responsáveis. Entrada aberta para todos com 16 anos ou mais.'
     }
 }
 
@@ -72,7 +72,7 @@ formCampo.forEach((campo) => {
     campo.addEventListener("invalid", evento => evento.preventDefault());
 })
 
-formulario.addEventListener('submit', async (event) => {
+formulario.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const listaRespostas = {
@@ -80,11 +80,13 @@ formulario.addEventListener('submit', async (event) => {
         'cpf': event.target.elements["cpf"].value,
         'email': event.target.elements["email"].value,
         'ingresso': event.target.elements["ingresso"].value,
-        'dataNascimento': event.target.elements["dataNascimento"].value
+        'dataNascimento': event.target.elements["dataNascimento"].value,
+        'id': Date.now()
     }
 
-    await capturandoCadastro(listaRespostas.nome, listaRespostas.cpf, listaRespostas.email, listaRespostas.ingresso, listaRespostas.dataNascimento);
+    listaIngressos = [...listaIngressos, listaRespostas];
 
+    localStorage.setItem("cadastro", JSON.stringify(listaIngressos));
     window.location.href = "./ingresso.html";
-
 })
+
