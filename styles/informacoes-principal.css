@@ -56,7 +56,8 @@
     display: block;
     background-color: var(--azul-claro);
     padding: 1rem;
-    margin-top: -5px;
+    margin-top: -0.3rem;
+    transform: rotate(360deg);
 }
 
 /* Para tablets */

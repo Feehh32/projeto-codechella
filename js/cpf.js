@@ -35,8 +35,11 @@ function validaPrimeiroDigito(cpf){
     soma = (soma*10) % 11;
 
     if (soma == 10 || soma == 11) {
-        soma == 0;
+        soma = 0;
     }
+
+    console.log(soma);
+
     return soma != cpf[9];
 }
 
@@ -52,7 +55,10 @@ function validaSegundoDigito(cpf){
     soma = (soma*10) % 11;
 
     if (soma == 10 || soma == 11) {
-        soma == 0;
+        soma = 0;
     }
+
+    console.log(soma);
+
     return soma != cpf[10];
 }

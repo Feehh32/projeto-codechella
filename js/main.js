@@ -1,10 +1,12 @@
 import ehUmCPF from "./cpf.js";
 import ehMaiorDe13 from "./idade.js";
 
+// todos os campos abaixo estao relacionados ao formulário  e ao ingresso
+
 function verificaCampo(campo) {
     let mensagem = "";
     campo.setCustomValidity('');
-
+    
     if (campo.name == "cpf" && campo.value.length >= 11) {
         ehUmCPF(campo);
     }
