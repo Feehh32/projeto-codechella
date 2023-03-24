@@ -32,7 +32,7 @@ function verificaCampo(campo) {
     }
 
 }
-
+ 
 
 const formCampo = document.querySelectorAll("[required]");
 const formulario = document.querySelector('[data-formulario]');

@@ -24,37 +24,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../assets/menu-hamburguer.svg');
-    display:block;
+    display: block;
 }
-
-.container__botao {
-    display: none;
-}
-
-.container__botao:checked ~ .cabecalho__menu > .menu__lista {
-    display: flex;
-} 
 
 .menu__lista {
-    display: none;
+    overflow: hidden;
     position: absolute;
     z-index: 1;
     top: 100%;
-    right: 0;
-    flex-direction: column;
-    gap: 8px;
-    padding: 1rem;
     background-color: var(--roxo-boreal);
-    align-items: center;
-   
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 300ms ease;
 }
 
 .menu__lista--item {
+    padding: .5rem 1rem;
     line-height: 3rem;
     font-size: 1.25rem;
     font-weight: 700;
-    border-bottom: 1px solid white;
-    transform: rotate(-0.39deg) ;
+    border-bottom: 3px solid var(--cor-da-fonte);
+}
+
+.menu__lista--item:first-child{
+    border-top: 3px solid var(--cor-da-fonte);
 }
 
 .menu__lista--link {
@@ -65,44 +59,49 @@
 
 /* versão tablet */
 
-@media screen and (min-width: 768px){
-    .cabecalho{
+@media screen and (min-width: 768px) {
+    .cabecalho {
         justify-content: center;
         flex-direction: column;
     }
 
-    .cabecalho__menu--hamburguer{
+    .cabecalho__menu--hamburguer {
         display: none;
     }
 
     .menu__lista {
         display: flex;
         position: inherit;
-        flex-direction: row;
         gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        height: auto;
+    }
+    
+    .menu__lista--item{
+        padding: 0;
+    }
+
+    .menu__lista--item:first-child{
+        border-top: none;
     }
 
     .menu__lista--item {
         border: none;
     }
-
-    .menu__lista--item:hover {
-       border-bottom: solid 2px var(--verde-claro);
+    
+    .menu__lista--link:hover {
+        border-bottom: solid 2px var(--verde-claro);
     }
 }
 
 /* Para desktops */
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
     .cabecalho {
         flex-direction: row;
         justify-content: space-around;
     }
+
 }
-
-
-
-
-
-
-

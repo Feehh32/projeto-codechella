@@ -39,6 +39,8 @@
 .legendas__square {
     width: 32px;
     height: 32px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-da-fonte);
 }
 
 .premium {
@@ -58,7 +60,10 @@
 }
 
 .rampas {
-    background-color: #0E7DF1;
+    background-image:url('../assets/rampa-cadeirante.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .square__legendas {

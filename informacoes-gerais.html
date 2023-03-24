@@ -19,28 +19,24 @@
             <img src="./assets/logo-codechella.png" alt="logo do CodeChella" class="cabecalho__link--logo">
         </a>
 
-        <div class="cabecalho__container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu--hamburguer"></span>
-            </label>
-            <nav class="cabecalho__menu">
-                <ul class="menu__lista">
-                    <li class="menu__lista--item">
-                        <a href="./experiencia.html" class="menu__lista--link">A experiência</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./mapa-de-setores.html" class="menu__lista--link">Mapa de Setores</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./informacoes-gerais.html" class="menu__lista--link">Informações</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./ingresso-formulario.html" class="menu__lista--link">Ingresso</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="cabecalho__menu">
+            <a href="#menu" class="cabecalho__menu--hamburguer" aria-label="abrir menu" data-btnMenu></a>
+
+            <ul class="menu__lista" data-lista>
+                <li class="menu__lista--item">
+                    <a href="./experiencia.html" class="menu__lista--link">A experiência</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./mapa-de-setores.html" class="menu__lista--link">Mapa de Setores</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./informacoes-gerais.html" class="menu__lista--link">Informações</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./ingresso-formulario.html" class="menu__lista--link">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="banner">
@@ -54,12 +50,14 @@
         <h3 class="informacoes__titulo">Perguntas Frequentes:</h3>
 
         <div class="informacoes__container">
+
             <div class="informacoes__quadro">
-                <input type="checkbox" id="question1" class="informacoes__pergunta">
-                <label for="question1">
-                    Quais serão as atrações?
-                    <i class="fa-solid fa-caret-down"></i>
-                </label>
+                <div class="informacoes__pergunta" data-header>
+                    <h4 class="informacoes__pergunta--conteudo">
+                        Quais serão as atrações?
+                    </h4>
+                    <i class="icon">+</i>
+                </div>
                 <div class="informacoes__resposta">
                     <p class="resposta__paragrafo">
                         Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com
@@ -69,26 +67,27 @@
             </div>
 
             <div class="informacoes__quadro">
-                <input type="checkbox" id="question2" class="informacoes__pergunta">
-                <label for="question2">
-                    Qual é a classificação etária?
-                    <i class="fa-solid fa-caret-down"></i>
-                </label>
+                <div class="informacoes__pergunta" data-header>
+                    <h4 class="informacoes__pergunta--conteudo">
+                        Qual é a classificação etária?
+                    </h4>
+                    <i class="icon">+</i>
+                </div>
                 <div class="informacoes__resposta">
                     <p class="resposta__paragrafo">
-                        A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.
+                        A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais
+                        ou responsáveis legais. Menores de 10 anos não podem entrar.
                     </p>
                 </div>
             </div>
 
             <div class="informacoes__quadro">
-                <input type="checkbox" id="question3" class="informacoes__pergunta">
-                <label for="question3" id="label3">
-                    Quais são os setores disponíveis?
-                   <div class="roda">
-                    <i class="fa-solid fa-caret-down"></i>
-                   </div> 
-                </label>
+                <div class="informacoes__pergunta" data-header>
+                    <h4 class="informacoes__pergunta--conteudo">
+                        Quais são os setores disponíveis?
+                    </h4>
+                    <i class="icon">+</i>
+                </div>
                 <div class="informacoes__resposta">
                     <ul class="resposta__lista">
                         <li class="resposta__paragrafo">Pista Premium</li>
@@ -101,27 +100,34 @@
             </div>
 
             <div class="informacoes__quadro">
-                <input type="checkbox" id="question4" class="informacoes__pergunta">
-                <label for="question4">
-                    Quais são os itens proibidos?
-                    <i class="fa-solid fa-caret-down"></i>
-                </label>
+                <div class="informacoes__pergunta" data-header>
+                    <h4 class="informacoes__pergunta--conteudo">
+                        Quais são os itens proibidos?
+                    </h4>
+                    <i class="icon">+</i>
+                </div>
                 <div class="informacoes__resposta">
                     <p class="resposta__paragrafo">
-                        Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.
+                        Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes,
+                        cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou
+                        perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias
+                        inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo
+                        térmico ou similares.
                     </p>
                 </div>
             </div>
 
             <div class="informacoes__quadro">
-                <input type="checkbox" id="question5" class="informacoes__pergunta">
-                <label for="question5">
-                    Quem tem direito a meia-entrada?
-                    <i class="fa-solid fa-caret-down"></i>
-                </label>
+                <div class="informacoes__pergunta" data-header>
+                    <h4 class="informacoes__pergunta--conteudo">
+                        Quem tem direito a meia-entrada?
+                    </h4>
+                    <i class="icon">+</i>
+                </div>
                 <div class="informacoes__resposta">
                     <p class="resposta__paragrafo">
-                        De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos comprobatórios.
+                        De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os
+                        requisitos e apresentarem os documentos comprobatórios.
                     </p>
                 </div>
             </div>
@@ -142,9 +148,13 @@
         </div>
 
         <div class="rodape__texto--div">
-            <p class="rodape__texto">Desenvolvido com <i>&hearts;</i> por Fernando Pereira. Projeto fictício sem fins comerciais.</p>
+            <p class="rodape__texto">Desenvolvido com <i>&hearts;</i> por Fernando Pereira. Projeto fictício sem fins
+                comerciais.</p>
         </div>
     </footer>
+
+    <script src="./js/menu-hamburguer.js"></script>
+    <script src="./js/accordion.js"></script>
 </body>
 
 </html>

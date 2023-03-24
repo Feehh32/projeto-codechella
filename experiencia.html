@@ -19,28 +19,24 @@
             <img src="./assets/logo-codechella.png" alt="logo do CodeChella" class="cabecalho__link--logo">
         </a>
 
-        <div class="cabecalho__container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu--hamburguer"></span>
-            </label>
-            <nav class="cabecalho__menu">
-                <ul class="menu__lista">
-                    <li class="menu__lista--item">
-                        <a href="./experiencia.html" class="menu__lista--link">A experiência</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./mapa-de-setores.html" class="menu__lista--link">Mapa de Setores</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./informacoes-gerais.html" class="menu__lista--link">Informações</a>
-                    </li>
-                    <li class="menu__lista--item">
-                        <a href="./ingresso-formulario.html" class="menu__lista--link">Ingresso</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="cabecalho__menu">
+            <a href="#menu" class="cabecalho__menu--hamburguer" aria-label="abrir menu" data-btnMenu></a>
+
+            <ul class="menu__lista" data-lista>
+                <li class="menu__lista--item">
+                    <a href="./experiencia.html" class="menu__lista--link">A experiência</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./mapa-de-setores.html" class="menu__lista--link">Mapa de Setores</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./informacoes-gerais.html" class="menu__lista--link">Informações</a>
+                </li>
+                <li class="menu__lista--item">
+                    <a href="./ingresso-formulario.html" class="menu__lista--link">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="banner">
         <div class="banner__div--texto">
@@ -109,9 +105,12 @@
         </div>
 
         <div class="rodape__texto--div">
-            <p class="rodape__texto">Desenvolvido com <i>&hearts;</i> por Fernando Pereira. Projeto fictício sem fins comerciais.</p>
+            <p class="rodape__texto">Desenvolvido com <i>&hearts;</i> por Fernando Pereira. Projeto fictício sem fins
+                comerciais.</p>
         </div>
     </footer>
+
+    <script src="./js/menu-hamburguer.js"></script>
 </body>
 
 </html>
