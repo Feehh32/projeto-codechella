@@ -1,7 +1,9 @@
 
 # CodeChella Project - A Eden for Devs
 
-![Badge Completo](https://img.shields.io/badge/status-Em_desenvolvimento-orange) 
+<img src="./assets/guitarrista-readme.jpg">  
+
+![Badge Completo](https://img.shields.io/badge/status-completo-green)  
 
 A full responsive website from a ficticious festival called CodeChella. This project takes part from studies in Alura challenge!
 
@@ -15,7 +17,15 @@ A full responsive website from a ficticious festival called CodeChella. This pro
 
 > ## To run this project 
 
-You just need a browser to run this project, you can do this here (soon) or make a clone on my [Github](https://github.com/Feehh32/projeto-codechella)
+You just need a browser to run this project, you can do this [here](projeto-codechella-indol.vercel.app) or make a clone on my [Github](https://github.com/Feehh32/projeto-codechella)  
+
+> ## Sreenshots
+
+<img src="./assets/screenshot-tablet.jpeg" width="40%">  
+  
+<img src="./assets/screenshot-mobile.png" width="40%%">  
+
+<img src="./assets/screenshot-index.png" width="50%">
 
 > ## Technologies
 
@@ -23,5 +33,5 @@ You just need a browser to run this project, you can do this here (soon) or make
 
 * ``HTML``
 
-* ``Javascript`` (soon)
+* ``Javascript``
 
