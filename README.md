@@ -17,7 +17,7 @@ A full responsive website from a ficticious festival called CodeChella. This pro
 
 > ## To run this project 
 
-You just need a browser to run this project, you can do this [here](projeto-codechella-indol.vercel.app) or make a clone on my [Github](https://github.com/Feehh32/projeto-codechella)  
+You just need a browser to run this project, you can do this [here](https://projeto-codechella-indol.vercel.app/) or make a clone on my [Github](https://github.com/Feehh32/projeto-codechella)  
 
 > ## Sreenshots
 
