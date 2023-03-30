@@ -1,37 +1,20 @@
+# Codechella
 
-# CodeChella Project - A Eden for Devs
+Project made in challenge from Alura to gain experience em build websites by myself
 
-<img src="./assets/guitarrista-readme.jpg">  
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Codechella**
+| :label: Tecnologias | Javascript, HTML, CSS
+| :rocket: URL         | https://projeto-codechella-indol.vercel.app/ 
+| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6?host=https://cursos.alura.com.br
 
-![Badge Completo](https://img.shields.io/badge/status-completo-green)  
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![codechella-index](./assets/screenshot-index.png#vitrinedev)
 
-A full responsive website from a ficticious festival called CodeChella. This project takes part from studies in Alura challenge!
+## Detalhes do projeto
 
-> ## Functionalities 
+The project was made to be responsive and to adhere to current market practices, that's why I used the mobile-first approach. I tried to keep as much semantic code as my current knowledge allows. The entire form was validated in javascript, and the final ticket is dynamic and filled with user information. Doing this project was quite revealing, it showed me a lot of my deficiencies, but also a lot of my learning so far. I intend to continue moving forward in search of learning more and getting my first opportunity in the technology field. Now onto my first framework, because doing this entire project without one was painful haha.
 
-* Check all the information about festival location, date and setlist.
 
-* Make your register and getting your ticket.
-
-* Receive a detailed description about experience organization and proposal about this festival 
-
-> ## To run this project 
-
-You just need a browser to run this project, you can do this [here](https://projeto-codechella-indol.vercel.app/) or make a clone on my [Github](https://github.com/Feehh32/projeto-codechella)  
-
-> ## Sreenshots
-
-<img src="./assets/screenshot-tablet.jpeg" width="40%">  
-  
-<img src="./assets/screenshot-mobile.png" width="40%%">  
-
-<img src="./assets/screenshot-index.png" width="50%">
-
-> ## Technologies
-
-* `` CSS ``
-
-* ``HTML``
-
-* ``Javascript``
 
